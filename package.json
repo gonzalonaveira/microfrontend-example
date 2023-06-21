@@ -1,0 +1,20 @@
+{
+  "name": "wp5-mfe-starter",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "clean": "yarn workspaces run clean",
+    "serve": "wsrun --parallel serve",
+    "start": "concurrently \"wsrun --parallel start\" \"wsrun --parallel serve\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "wsrun": "^5.2.0",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--    <script src="http://localhost:3001/home_remoteEntry.js"></script>-->
+
+    <script src="http://localhost:3005/productImage_remoteEntry.js"></script>
+    <script src="http://localhost:3004/buyProduct_remoteEntry.js"></script>
+
+    <script src="http://localhost:3003/nav_remoteEntry.js"></script>
+    <script src="http://localhost:3006/core_remoteEntry.js"></script>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #single-spa-application:menu {
+            width: 200px;
+            float: left;
+        }
+        .product-area {
+            display: grid;
+            grid-template-columns: 70% 30%;
+        }
+        .product-area > div {
+            padding: 1em;
+        }
+
+        .root-container {
+            width: 100vw;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="root-container">
+
+      <div id="single-spa-application:header"></div>
+      <div id="single-spa-application:menu"></div>
+
+      <div class="product-area">
+        <div id="single-spa-application:product-grid"></div>
+        <div id="single-spa-application:buy-product"></div>
+      </div>
+      <div id="single-spa-application:footer"></div>
+    </div>
+  </body>
+</html>
